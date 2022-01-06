@@ -14,13 +14,13 @@ const Order = () => {
       <div className={styles.left}>
         <div className={styles.row}>
           <table className={styles.table}>
-            <tr className={styles.tr}>
+            <tr className={styles.trTitle}>
               <th>Order Id</th>
               <th>Customer</th>
               <th>Address</th>
               <th>Total</th>
             </tr>
-            <tr>
+            <tr className={styles.tr}>
               <td>
                 <span className={styles.id}>34324</span>
               </td>
@@ -37,28 +37,52 @@ const Order = () => {
             <Image alt="" src="/img/paid.png" width={30} height={30} />
             <span>Payment</span>
             <div className={styles.checkedIcon}>
-              <Image src="/img/checked.png" width={20} height={20} alt="" />
+              <Image
+                className={styles.checkedIcon}
+                src="/img/checked.png"
+                width={20}
+                height={20}
+                alt=""
+              />
             </div>
           </div>
           <div className={statusClass(1)}>
             <Image alt="" src="/img/bake.png" width={30} height={30} />
             <span>Preparing</span>
             <div className={styles.checkedIcon}>
-              <Image src="/img/checked.png" width={20} height={20} alt="" />
+              <Image
+                className={styles.checkedIcon}
+                src="/img/checked.png"
+                width={20}
+                height={20}
+                alt=""
+              />
             </div>
           </div>
           <div className={statusClass(2)}>
             <Image alt="" src="/img/bike.png" width={30} height={30} />
             <span>On the way</span>
             <div className={styles.checkedIcon}>
-              <Image src="/img/checked.png" width={20} height={20} alt="" />
+              <Image
+                className={styles.checkedIcon}
+                src="/img/checked.png"
+                width={20}
+                height={20}
+                alt=""
+              />
             </div>
           </div>
           <div className={statusClass(3)}>
             <Image alt="" src="/img/delivered.png" width={30} height={30} />
             <span>Delivered</span>
             <div className={styles.checkedIcon}>
-              <Image src="/img/checked.png" width={20} height={20} alt="" />
+              <Image
+                className={styles.checkedIcon}
+                src="/img/checked.png"
+                width={20}
+                height={20}
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -83,6 +107,5 @@ const Order = () => {
     </div>
   );
 };
-// 1:27:00
 
 export default Order;
